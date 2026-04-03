@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #0a7cff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(120deg, #0a7cff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #0a7cff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* SERVIÇOS */
+.servicos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ANTES E DEPOIS */
+.antes-depois {
+    padding: 40px;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* CONTATO */
+.contato {
+    background: #0a7cff;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+/* BOTÃO WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
