@@ -1,7 +1,7 @@
 function App() {
 
   const whatsapp = () => {
-    const numero = "5511999999999";
+    const numero = "5511984644381";
     const mensagem = "Olá! Quero um orçamento para limpeza de estofados";
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`);
   };
@@ -28,18 +28,23 @@ function App() {
 
         <div className="cards">
           <div className="card">
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" />
+            <img src="https://img.freepik.com/fotos-premium/sofa-antes-e-depois-de-limpeza-a-seco-perto-de-parede-cinzenta-em-interiores-colagem_144356-46144.jpg?w=1500" />
             <p>Sofás</p>
           </div>
 
           <div className="card">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" />
+            <img src="https://img.freepik.com/fotos-premium/colchao-antes-e-depois-da-limpeza-dentro-de-casa-vista-superior_495423-31944.jpg?w=1500" />
             <p>Colchões</p>
           </div>
 
           <div className="card">
-            <img src="https://images.unsplash.com/photo-1598300056393-4aac492f4344" />
+            <img src="https://img.freepik.com/fotos-premium/cadeira-de-moveis-estofada-antes-e-depois-da-limpeza-a-seco-sobre-um-fundo-branco_186673-12696.jpg?w=1500" />
             <p>Cadeiras</p>
+          </div>
+
+          <div className="card">
+            <img src="https://img.freepik.com/fotos-premium/espalhar-detergente-em-assentos-de-tecido-do-carro-usando-broca-com-escova-para-limpeza-a-seco-aplicar-detergente-em-assento-de-tecido-no-interior-do-carro-para-limpeza-a-seco_255847-10050.jpg?w=1500" />
+            <p>Banco de veículos</p>
           </div>
         </div>
       </section>
@@ -48,8 +53,8 @@ function App() {
         <h2>Antes e Depois</h2>
 
         <div className="galeria">
-          <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" />
-          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" />
+          <img src="https://img.freepik.com/fotos-premium/o-sofa-passa-da-suja-a-limpa-com-um-servico-de-limpeza-profissional_864588-94149.jpg?w=1500" />
+          <img src="https://img.freepik.com/fotos-premium/comparacao-de-um-sofa-bege-sujo-antes-da-limpeza-e-do-mesmo-sofa-apos-a-limpeza-destacando-a-eficacia-do-processo-de-limpeza_124507-304972.jpg?w=1500" />
         </div>
       </section>
 
