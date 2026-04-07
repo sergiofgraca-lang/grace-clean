@@ -7,10 +7,10 @@ function App() {
   const [visitas, setVisitas] = useState(0);
 
 useEffect(() => {
-  fetch("https://api.countapi.xyz/hit/graceclean2026/visitas")
-    .then((res) => res.json())
-    .then((data) => setVisitas(data.value))
-    .catch((err) => console.error("Erro:", err));
+  fetch("https://api.counterapi.dev/v1/graceclean/visitas/up")
+    .then(res => res.json())
+    .then(data => setVisitas(data.count))
+    .catch(err => console.error(err));
 }, []);
 
   const whatsapp = () => {
