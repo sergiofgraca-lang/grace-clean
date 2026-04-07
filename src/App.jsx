@@ -6,24 +6,13 @@ import minhaFotocadeira from "./assets/minha-fotocadeira.jpg";
 function App() {
   const [visitas, setVisitas] = useState(0);
 
+
+
 useEffect(() => {
-  async function contar() {
-    try {
-      // cria o contador (só na primeira vez, se já existir ignora)
-      await fetch("https://api.countapi.xyz/create?namespace=graceclean&key=visitas&value=0");
-
-      // incrementa
-      const res = await fetch("https://api.countapi.xyz/hit/graceclean/visitas");
-      const data = await res.json();
-
-      console.log("Contador funcionando:", data);
-      setVisitas(data.value);
-    } catch (err) {
-      console.error("Erro real:", err);
-    }
-  }
-
-  contar();
+  fetch("https://projetox-0blz.onrender.com/visitas/")
+    .then(res => res.json())
+    .then(data => setVisitas(data.total))
+    .catch(err => console.error(err));
 }, []);
 
   const whatsapp = () => {
