@@ -10,9 +10,15 @@ function App() {
 
 useEffect(() => {
   fetch("https://projetox-0blz.onrender.com/visitas/")
-    .then(res => res.json())
-    .then(data => setVisitas(data.total))
-    .catch(err => console.error(err));
+    .then(res => {
+      console.log("STATUS:", res.status); // 👈 debug
+      return res.json();
+    })
+    .then(data => {
+      console.log("DADOS:", data); // 👈 debug
+      setVisitas(data.total);
+    })
+    .catch(err => console.error("ERRO FETCH:", err));
 }, []);
 
   const whatsapp = () => {
