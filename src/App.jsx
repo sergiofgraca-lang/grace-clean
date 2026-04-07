@@ -6,12 +6,20 @@ import minhaFotocadeira from "./assets/minha-fotocadeira.jpg";
 function App() {
   const [visitas, setVisitas] = useState(0);
 
-  useEffect(() => {
-    fetch("https://api.countapi.xyz/hit/graceclean/visitas")
-      .then((res) => res.json())
-      .then((data) => setVisitas(data.value))
-      .catch((err) => console.error("Erro:", err));
-  }, []);
+ useEffect(() => {
+  async function contarVisita() {
+    try {
+      const res = await fetch("https://api.countapi.xyz/hit/graceclean123/visitas");
+      const data = await res.json();
+      console.log("Contador:", data); // 👈 veja no console
+      setVisitas(data.value);
+    } catch (error) {
+      console.error("Erro ao contar visita:", error);
+    }
+  }
+
+  contarVisita();
+}, []);
 
   const whatsapp = () => {
     const numero = "5511984644381";
