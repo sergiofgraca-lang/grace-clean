@@ -10,7 +10,7 @@ body {
 
 /* HEADER */
 header {
-    background: #0a7cff;
+    background: hsl(255, 91%, 41%);
     color: white;
     padding: 15px;
     display: flex;

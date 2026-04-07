@@ -1,10 +1,14 @@
+import minhaFoto3carro from "./assets/minha-foto3carro.jpg";
+import minhaFoto2sofa from "./assets/minha-foto-2-sofa.jpg";
+import minhaFotocadeira from "./assets/minha-fotocadeira.jpg";
 function App() {
 
   const whatsapp = () => {
     const numero = "5511984644381";
     const mensagem = "Olá! Quero um orçamento para limpeza de estofados";
-    window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`);
-  };
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+  window.open(url, "_blank");
+};
 
   return (
     <>
@@ -16,7 +20,6 @@ function App() {
           <a href="#contato">Contato</a>
         </nav>
       </header>
-
       <section id="inicio" className="hero">
         <h2>Limpeza Profissional de Estofados</h2>
         <p>Sofás, colchões e mais</p>
@@ -28,23 +31,27 @@ function App() {
 
         <div className="cards">
           <div className="card">
-            <img src="https://img.freepik.com/fotos-premium/sofa-antes-e-depois-de-limpeza-a-seco-perto-de-parede-cinzenta-em-interiores-colagem_144356-46144.jpg?w=1500" />
+            <img src={minhaFoto2sofa} alt="Sofá" />
             <p>Sofás</p>
+             <p>Higienização e limpeza profissional</p>
           </div>
 
           <div className="card">
             <img src="https://img.freepik.com/fotos-premium/colchao-antes-e-depois-da-limpeza-dentro-de-casa-vista-superior_495423-31944.jpg?w=1500" />
-            <p>Colchões</p>
+            <p>Colchões 
+              tirar manchas, higiênizar e eliminar ácaros
+            </p>
           </div>
 
           <div className="card">
-            <img src="https://img.freepik.com/fotos-premium/cadeira-de-moveis-estofada-antes-e-depois-da-limpeza-a-seco-sobre-um-fundo-branco_186673-12696.jpg?w=1500" />
-            <p>Cadeiras</p>
+            <img src={minhaFotocadeira} alt="Cadeira" />
+            <p>Cadeiras higienizadas e limpas
+              a seco</p>
           </div>
 
           <div className="card">
-            <img src="https://img.freepik.com/fotos-premium/espalhar-detergente-em-assentos-de-tecido-do-carro-usando-broca-com-escova-para-limpeza-a-seco-aplicar-detergente-em-assento-de-tecido-no-interior-do-carro-para-limpeza-a-seco_255847-10050.jpg?w=1500" />
-            <p>Banco de veículos</p>
+            <img src={minhaFoto3carro} />
+            <p>Banco de veículos aspiração e higienização</p>
           </div>
         </div>
       </section>
@@ -69,8 +76,8 @@ function App() {
       </footer>
 
       <div className="whatsapp-float" onClick={whatsapp}>
-        💬
-      </div>
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="30" />
+</div>
     </>
   );
 }

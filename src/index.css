@@ -10,7 +10,7 @@ body {
 
 /* HEADER */
 header {
-    background: #0a7cff;
+    background: #6c0aff;
     color: white;
     padding: 15px;
     display: flex;
@@ -19,7 +19,7 @@ header {
 }
 
 nav a {
-    color: white;
+    color: rgba(247, 240, 240, 0.912);
     margin-left: 15px;
     text-decoration: none;
 }
@@ -55,7 +55,7 @@ nav a {
 }
 
 .card {
-    background: #fff;
+    background: #b9da96;
     padding: 15px;
     border-radius: 15px;
     width: 200px;
@@ -112,10 +112,10 @@ footer {
     bottom: 20px;
     right: 20px;
     background: #25d366;
-    color: white;
+    color: rgb(216, 16, 16);
     font-size: 24px;
     padding: 15px;
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
 }
 
