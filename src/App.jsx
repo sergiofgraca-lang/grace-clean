@@ -9,7 +9,7 @@ function App() {
 
 
 useEffect(() => {
-  fetch("https://projetox-0blz.onrender.com/visitas/")
+  fetch("https://projetoxbackend-production.up.railway.app/visitas/")
     .then(res => {
       console.log("STATUS:", res.status); // 👈 debug
       return res.json();
