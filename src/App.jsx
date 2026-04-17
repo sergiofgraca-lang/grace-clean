@@ -6,20 +6,23 @@ import minhaFotocadeira from "./assets/minha-fotocadeira.jpg";
 function App() {
   const [visitas, setVisitas] = useState(0);
 
+  useEffect(() => {
+    fetch("https://projetoxbackend-production.up.railway.app/visitas/")
+      .then((res) => res.json())
+      .then((data) => {
+        setVisitas(data.total);
+      })
+      .catch((err) => console.error(err));
+  }, []);
+
+  return (
+    <div>
+      <p>👁️ {visitas} visitas</p>
+    </div>
+  );
+}
 
 
-useEffect(() => {
-  fetch("https://projetoxbackend-production.up.railway.app/visitas/")
-    .then(res => {
-      console.log("STATUS:", res.status); // 👈 debug
-      return res.json();
-    })
-    .then(data => {
-      console.log("DADOS:", data); // 👈 debug
-      setVisitas(data.total);
-    })
-    .catch(err => console.error("ERRO FETCH:", err));
-}, []);
 
   const whatsapp = () => {
     const numero = "5511984644381";
@@ -113,6 +116,6 @@ useEffect(() => {
       </div>
     </div>
   );
-}
+
 
 export default App;
