@@ -15,15 +15,6 @@ function App() {
       .catch((err) => console.error(err));
   }, []);
 
-  return (
-    <div>
-      <p>👁️ {visitas} visitas</p>
-    </div>
-  );
-}
-
-
-
   const whatsapp = () => {
     const numero = "5511984644381";
     const mensagem = "Olá! Quero um orçamento para limpeza de estofados";
@@ -32,12 +23,18 @@ function App() {
   };
 
   return (
-    <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-      
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       {/* CONTEÚDO */}
       <div style={{ flex: 1 }}>
         <header>
           <h1>Grace Clean</h1>
+
           <nav>
             <a href="#inicio">Início</a>
             <a href="#servicos">Serviços</a>
@@ -48,7 +45,10 @@ function App() {
         <section id="inicio" className="hero">
           <h2>Limpeza Profissional de Estofados</h2>
           <p>Sofás, colchões e mais</p>
-          <button onClick={whatsapp}>Solicitar Orçamento</button>
+
+          <button onClick={whatsapp}>
+            Solicitar Orçamento
+          </button>
         </section>
 
         <section id="servicos" className="servicos">
@@ -62,8 +62,13 @@ function App() {
             </div>
 
             <div className="card">
-              <img src="https://img.freepik.com/fotos-premium/colchao-antes-e-depois-da-limpeza-dentro-de-casa-vista-superior_495423-31944.jpg?w=1500" />
-              <p>Colchões tirar manchas, higiênizar e eliminar ácaros</p>
+              <img
+                src="https://img.freepik.com/fotos-premium/colchao-antes-e-depois-da-limpeza-dentro-de-casa-vista-superior_495423-31944.jpg?w=1500"
+                alt="Colchão"
+              />
+              <p>
+                Colchões: tirar manchas, higienizar e eliminar ácaros
+              </p>
             </div>
 
             <div className="card">
@@ -72,8 +77,11 @@ function App() {
             </div>
 
             <div className="card">
-              <img src={minhaFoto3carro} />
-              <p>Banco de veículos aspiração e higienização</p>
+              <img
+                src={minhaFoto3carro}
+                alt="Banco de veículo"
+              />
+              <p>Banco de veículos: aspiração e higienização</p>
             </div>
           </div>
         </section>
@@ -82,19 +90,30 @@ function App() {
           <h2>Antes e Depois</h2>
 
           <div className="galeria">
-            <img src="https://img.freepik.com/fotos-premium/o-sofa-passa-da-suja-a-limpa-com-um-servico-de-limpeza-profissional_864588-94149.jpg?w=1500" />
-            <img src="https://img.freepik.com/fotos-premium/comparacao-de-um-sofa-bege-sujo-antes-da-limpeza-e-do-mesmo-sofa-apos-a-limpeza-destacando-a-eficacia-do-processo-de-limpeza_124507-304972.jpg?w=1500" />
+            <img
+              src="https://img.freepik.com/fotos-premium/o-sofa-passa-da-suja-a-limpa-com-um-servico-de-limpeza-profissional_864588-94149.jpg?w=1500"
+              alt="Antes e Depois 1"
+            />
+
+            <img
+              src="https://img.freepik.com/fotos-premium/comparacao-de-um-sofa-bege-sujo-antes-da-limpeza-e-do-mesmo-sofa-apos-a-limpeza-destacando-a-eficacia-do-processo-de-limpeza_124507-304972.jpg?w=1500"
+              alt="Antes e Depois 2"
+            />
           </div>
         </section>
 
         <section id="contato" className="contato">
           <h2>Fale Conosco</h2>
+
           <p>Atendemos na sua casa</p>
-          <button onClick={whatsapp}>Chamar no WhatsApp</button>
+
+          <button onClick={whatsapp}>
+            Chamar no WhatsApp
+          </button>
         </section>
       </div>
 
-      {/* RODAPÉ COM CONTADOR */}
+      {/* RODAPÉ */}
       <footer
         style={{
           backgroundColor: "#111",
@@ -107,15 +126,16 @@ function App() {
         © 2026 Grace Clean • 👀 {visitas} visitas
       </footer>
 
-      {/* BOTÃO WHATSAPP */}
+      {/* BOTÃO FLUTUANTE */}
       <div className="whatsapp-float" onClick={whatsapp}>
         <img
           src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+          alt="WhatsApp"
           width="30"
         />
       </div>
     </div>
   );
-
+}
 
 export default App;
