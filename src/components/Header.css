@@ -1,0 +1,50 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 60px;
+
+  background: #0b3d2e;
+  color: white;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo h2{
+  margin:0;
+}
+
+.header nav{
+  display:flex;
+  gap:30px;
+}
+
+.header a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+
+.header a:hover{
+  color:#7fd36a;
+}
+
+@media(max-width:768px){
+
+.header{
+  flex-direction:column;
+  gap:15px;
+  padding:20px;
+}
+
+.header nav{
+  gap:20px;
+}
+
+}
