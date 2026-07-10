@@ -4,6 +4,13 @@ import WhatsappButton from "../components/WhatsappButton";
 import "../styles/Home.css";
 
 export default function Home() {
+  const whatsapp = () => {
+    window.open(
+      "https://wa.me/5511984644381?text=Olá! Gostaria de um orçamento para higienização.",
+      "_blank"
+    );
+  };
+
   return (
    <>
   <Header />
@@ -17,7 +24,9 @@ export default function Home() {
         domicílio.
       </p>
 
-      <button>Solicitar Orçamento</button>
+      <button onClick={whatsapp}>
+            Solicitar Orçamento
+          </button>
     </div>
   </section>
 
