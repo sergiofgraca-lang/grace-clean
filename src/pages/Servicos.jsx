@@ -10,7 +10,7 @@ import carro from "../assets/images/minha-foto3carro.jpg";
 import colchao from "../assets/images/colchao.jpg";
 
 import antesDepois1 from "../assets/images/antes-depois/antes-depois-cadeira.jpg";
-
+import antesDepois2 from "../assets/images/antes-depois/antes-depois-sofa.jpg";
 export default function Servicos() {
   const whatsapp = () => {
     window.open(
@@ -264,14 +264,42 @@ export default function Servicos() {
         <p>
           Limpeza profunda com remoção de manchas, sujeiras, odores e microrganismos, preservando o tecido e devolvendo o aspecto de novo ao estofado.
         </p>
+        <div className="trabalho">
 
-      </div>
+  <img
+    src={antesDepois2}
+    alt="Antes e depois colchão"
+  />
 
-    </div>
+  <div className="trabalho-info">
+
+    <h3>Higienização de Colchão</h3>
+
+    <p>
+      Limpeza profunda eliminando ácaros, fungos e manchas.
+    </p>
 
   </div>
 
+</div>
+        
+
+        
+        <button onClick={whatsapp}></button>
+
+      </div>
+      
+      
+
+    </div>
+    
+
+  </div>
+
+  
+
 </section>
+
 
       <Footer />
 
