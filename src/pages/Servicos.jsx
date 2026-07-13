@@ -11,6 +11,8 @@ import colchao from "../assets/images/colchao.jpg";
 
 import antesDepois1 from "../assets/images/antes-depois/antes-depois-cadeira.jpg";
 import antesDepois2 from "../assets/images/antes-depois/antes-depois-sofa.jpg";
+import antesDepois3 from "../assets/images/antes-depois/antes-depois-colchao.jpg";
+import antesDepois4 from "../assets/images/antes-depois/antes-depois-carro.jpg";
 export default function Servicos() {
   const whatsapp = () => {
     window.open(
@@ -264,10 +266,11 @@ export default function Servicos() {
         <p>
           Limpeza profunda com remoção de manchas, sujeiras, odores e microrganismos, preservando o tecido e devolvendo o aspecto de novo ao estofado.
         </p>
+       
         <div className="trabalho">
 
   <img
-    src={antesDepois2}
+    src={antesDepois3}
     alt="Antes e depois colchão"
   />
 
@@ -278,6 +281,44 @@ export default function Servicos() {
     <p>
       Limpeza profunda eliminando ácaros, fungos e manchas.
     </p>
+
+    <div className="trabalho">
+
+  <img
+    src={antesDepois2}
+    alt="Antes e depois sofa"
+  />
+
+
+    <div className="trabalho-info">
+
+    <h3>Higienização de Sofá</h3>
+
+    <p>
+      Limpeza profissional preservando o tecido.
+    </p>
+    <div className="trabalho">
+
+  <img
+    src={antesDepois4}
+    alt="Antes e depois carro"
+  />
+
+  <div className="trabalho-info">
+
+    <h3>Bancos Automotivos</h3>
+
+    <p>
+      Remoção de manchas e odores do interior do veículo.
+    </p>
+
+  </div>
+
+</div>
+
+  </div>
+
+</div>
 
   </div>
 
